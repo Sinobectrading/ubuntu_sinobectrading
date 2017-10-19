@@ -89,6 +89,14 @@
 <!-- Main -->
 <script src="js/main.js"></script>
 <script src="js/classie.js"></script>
+
+
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/jquery.tablesorter.widgets.min.js"></script>
+<script src="js/jquery.tablesorter.pager.min.js"></script>
+
+
+
 <script>
 var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 

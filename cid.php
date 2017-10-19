@@ -6,34 +6,23 @@ header("Content-Type: application/json;charset=utf-8");
 
 include 'db.php';	
 
-$companyid = "";	
-$pon = "";
-
-if (isset($_POST["trackvalue"])) {
-	$tve = $_POST["trackvalue"];
+if (isset($_POST["cidvalue"])) {
+	$cid = $_POST["cidvalue"];
 }
-
 
 	$querycid = "SELECT * FROM customer WHERE cid=:clientid";
 		$stmtcid = $conn->prepare($querycid);
-		$stmtcid->bindParam(':clientid', $tve, PDO::PARAM_STR);
+		$stmtcid->bindParam(':clientid', $cid, PDO::PARAM_STR);
 
 	$stmtcid->execute();
 
-
-	$querypon = "SELECT * FROM po WHERE ag=:ponum";
-		$stmtpon = $conn->prepare($querypon);
-		$stmtpon->bindParam(':ponum', $tve, PDO::PARAM_STR);
-
-	$stmtpon->execute();
-
- 
 	// $result = $stmt->fetchAll();
-	if($stmtpon->rowCount() > 0){
-		echo '{"success":true, "message":"PO number valid"}';
+	if( $stmtcid->rowCount() > 0){
+		echo '{"success":true, "message":""}';
 	}
-	if($stmtpon->rowCount() == 0){
-		echo '{"success":false, "message":"PO number does not exist!"}';
-	}
-}
+ 
+	if ( $stmtcid->rowCount() ==0 ) {
+		echo '{"success":false,"message":"Customer ID does not exist!"}';
+	} 
+ 	
 ?>
