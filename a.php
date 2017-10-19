@@ -1,0 +1,1 @@
+<?php echo trim($_SERVER['PHP_SELF'];
