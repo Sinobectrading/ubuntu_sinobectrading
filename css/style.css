@@ -107,7 +107,9 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   height: 3vh;
   min-height: 3vh;
 }
-
+#res  {
+  background: white ! important
+}
 
 .none {
     display: none;

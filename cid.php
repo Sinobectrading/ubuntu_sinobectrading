@@ -5,9 +5,10 @@ header('Access-Control-Allow-Credentials:true');
 header("Content-Type: application/json;charset=utf-8"); 
 
 include 'db.php';	
+include_once 'func.php';
 
 if (isset($_POST["cidvalue"])) {
-	$cid = $_POST["cidvalue"];
+	$cid = strtolower(filterName($_POST["cidvalue"]));
 }
 
 	$querycid = "SELECT * FROM customer WHERE cid=:clientid";
