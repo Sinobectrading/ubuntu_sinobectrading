@@ -48,9 +48,9 @@ $("#track").prop('disabled', true);
 // var result;
 $(document).ready(function(){
 $('#cidname').on({
-		focus: function(){
-			$("#ciderror").empty();
-		},
+	focus: function(){
+		$("#ciderror").empty();
+	},
 
 	blur: function(){
 		$.ajax({
@@ -66,7 +66,8 @@ $('#cidname').on({
 					console.log('cidvalid');
 				}			
 				if(data.success == false) {
-					$("#ciderror").append(data.message);
+					$("#cidname").addClass('err');
+					$("#cidname").attr("placeholder", "Customer ID does not exist!").val("");
 					console.log("cid data is false");
 				}
 			},
@@ -78,11 +79,6 @@ $('#cidname').on({
 
 });
 
-$('#ponumber').on({
-	focus: function(){
-		$("#poerror").empty();
-	},
-});
  
 $('#track').on({ 
 	click: function(){
@@ -96,16 +92,16 @@ $('#track').on({
 				},
 			success: function(datat){
 				if (datat.success) {
- 					console.log('povalid');
- 					$('#ajaxresponse').replaceWith('<table class="table table-hover" id="restable"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></tr><tr><td>'+datat.result.ag+'</td><td>'+datat.result.sinobec+'</td><td>'+datat.result.invoice+'</td><td>'+datat.result.shipref+'</td><td>'+datat.result.contref+'</td><td>'+datat.result.eta+'</td></tr></table>');
-
-	 
+ 					
+ 					$('#ajaxresponse').replaceWith('<table class="table table-hover table-responsive" id="ajaxresponse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></tr><tr><td>'+datat.result.ag+'</td><td>'+datat.result.sinobec+'</td><td>'+datat.result.invoice+'</td><td>'+datat.result.shipref+'</td><td>'+datat.result.contref+'</td><td>'+datat.result.eta+'</td></tr></table>');
+  					 console.log('povalid');
 					// if(result == "cp") {
 					// 	$("#track").prop('disabled', false);
 					// }
 				}			
 				else {
-					$("#poerror").replaceWith(datat.message);
+					$("#ponumber").addClass('err');
+					$("#ponumber").attr("placeholder", "PO number does not exist!").val("");
 					console.log("po number is false");
 				}
 			},

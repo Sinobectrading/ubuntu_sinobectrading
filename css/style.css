@@ -110,6 +110,11 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 #res  {
   background: white ! important
 }
+.err::-webkit-input-placeholder {
+    color: red;
+}
+
+
 
 .none {
     display: none;
@@ -536,6 +541,11 @@ div.menu-1 ul li a:hover:before {
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
+  #fh5co-tracking {
+  height: 100vh;
+  min-height: 100%;
+  padding-top: 33vh
+}
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
     min-height: 0px;
