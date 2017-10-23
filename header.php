@@ -46,7 +46,7 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -93,8 +93,7 @@
 		<div class="top">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<div id="searchbox" class="col-md-6 clearfix">
+ 						<div id="searchbox" class="col col-12  col-lg-6">
 							<script>
 								(function() {
 								var cx = '005158123518513953887:apxmeeflxxc';
@@ -119,7 +118,7 @@
 								<gcse:search enableAutoComplete="true"></gcse:search>
 						</div>
 						<!--  -->
-						<div id="media" class="col-md-6">
+						<div id="media" class="col col-12 col-lg-6">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -129,8 +128,7 @@
 							<p class="num">Call: +1 (514) 339 9333</p>
 							
 						</div>
-					</div>
-				</div>
+ 				</div>
 			</div>
 		</div>
 		<div class="top-menu">

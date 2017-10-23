@@ -70,7 +70,7 @@
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap4.min.js"></script>
 <!-- Waypoints -->
 <script src="js/jquery.waypoints.min.js"></script>
 <!-- Stellar Parallax -->
@@ -89,7 +89,7 @@
 <!-- Main -->
 <script src="js/main.js"></script>
 <script src="js/classie.js"></script>
-
+<script src="js/tether.min.js"></script>
 
 <script src="js/jquery.tablesorter.min.js"></script>
 <script src="js/jquery.tablesorter.widgets.min.js"></script>

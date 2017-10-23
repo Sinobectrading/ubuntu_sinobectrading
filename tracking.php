@@ -68,6 +68,7 @@ $('#cidname').on({
 				if(data.success == false) {
 					$("#cidname").addClass('err');
 					$("#cidname").attr("placeholder", "Customer ID does not exist!").val("");
+					$("#cidname").focus();
 					console.log("cid data is false");
 				}
 			},
@@ -102,6 +103,7 @@ $('#track').on({
 				else {
 					$("#ponumber").addClass('err');
 					$("#ponumber").attr("placeholder", "PO number does not exist!").val("");
+					$("#ponumber").focus();
 					console.log("po number is false");
 				}
 			},

@@ -54,6 +54,7 @@ body {
   float: right ! important;
 } 
 #media {
+  float: right;
   padding-right: 0 ! important
 }
 .gcsc-branding {
