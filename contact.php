@@ -39,22 +39,26 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form action="mail.php" method="post" id="contactform">
+<!-- =======================FORM START===================== -->	
+<!-- =======================FORM START===================== -->	
+<!-- =======================FORM START===================== -->	
+<!-- =======================FORM START===================== -->	
+					<form action="mail.php" method="post" id="contactform" class="toggle-disabled">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="fname" name="fname" class="form-control" placeholder="Your firstname" required>
+								<input type="text" id="fname" name="fname" class="form-control" placeholder="Your firstname" data-validation="alphanumeric required"  data-validation-error-msg="Input empty or invalid sympol">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="lname" name="lname" class="form-control" placeholder="Your lastname" required>
+								<input type="text" id="lname" name="lname" class="form-control" placeholder="Your lastname"  data-validation="alphanumeric required" data-validation-error-msg="Input empty or invalid sympol">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="email">Email</label> -->
-								<input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required>
+								<input type="email" id="email" name="email" class="form-control" placeholder="Your email address"  data-validation="email required">
 							</div>
 						</div>
 
@@ -68,7 +72,7 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="message" name="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" required></textarea>
+								<textarea name="message" id="message" rows="30"  cols="50" class="form-control" placeholder="Say something about us" data-validation="required"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -90,6 +94,20 @@
 <?php include_once 'footer.php'; ?>
 <script>
 $(document).ready(function(){
+
+$.validate({
+  form : '#contactform',
+  modules : 'toggleDisabled',
+  disabledFormFilter : 'form.toggle-disabled'
+  // onSuccess: function($form){
+  // 	$("#msgsent").html("<img src='images/l02.gif'/>");
+  // }
+
+
+
+
+});
+
 
 $("#submit").click(function(){
 	$("#contactform").submit(function(e){
@@ -115,9 +133,9 @@ $("#submit").click(function(){
 	$("#contactform").submit(); //SUBMIT FORM
 });
 
-$('#reset').click(function(){
-        $('#contactform')[0].reset();
-  });
+	$('#reset').click(function(){
+		$('#contactform')[0].reset();
+  	});
 
 });
 </script>

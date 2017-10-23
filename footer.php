@@ -97,6 +97,10 @@
 
 
 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
 <script>
 var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 
