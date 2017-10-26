@@ -21,6 +21,12 @@ body {
 .left {
   float: left;
 }
+.center {
+  text-align: center;
+}
+h1.center {
+  padding: 6vh
+}
 .icomoon {
   font-family: 'icomoon' !important;
 }
@@ -47,6 +53,21 @@ body {
   fill: #bebebe ! important;
 }
 
+.btntrs {
+  background: transparent;
+  border-color: #333;
+  cursor: pointer;
+}
+
+
+/*======products page*/
+div#page div.product {
+  padding-top: 10em;
+}
+.product .container .row img {
+  width: 100%
+}
+
 
 /*google search box start*/
 
@@ -57,6 +78,9 @@ body {
   float: right;
   padding-right: 0 ! important
 }
+
+
+
 .gcsc-branding {
   display: none ! important;
 }
@@ -95,10 +119,12 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .gsc-adBlock{ 
         display: none !important; 
 } 
+
+
 #fh5co-tracking {
-  height: 60vh;
+  height: 80vh;
   min-height: 100%;
-  padding-top: 20vh;
+  padding-top: 23vh;
 }
 #tracking div.error  {
   margin-top: 3vh;
@@ -114,8 +140,80 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .err::-webkit-input-placeholder {
     color: red;
 }
+#toprow  .menu-1  {
+  position: absolute;
+  right: 0
+}
+
+span.form-error {
+  color: red;
+  font-size: 0.9em;
+  padding-left: 18px;
+}
 
 
+.modal-body:not(.two-col) { padding:0px }
+.glyphicon { margin-right:5px; }
+.glyphicon-new-window { margin-left:5px; }
+.modal-body .radio,.modal-body .checkbox {margin-top: 0px;margin-bottom: 0px;}
+.modal-body .list-group {margin-bottom: 0;}
+.margin-bottom-none { margin-bottom: 0; }
+.modal-body .radio label,.modal-body .checkbox label { display:block; }
+.modal-footer {margin-top: 0px;}
+@media screen and (max-width: 325px){
+    .btn-close {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .btn-results {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .btn-vote{
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+}
+.modal-footer .btn+.btn {
+    margin-left: 0px;
+}
+.progress {
+    margin-right: 10px;
+}
+
+
+
+#msgsent {
+  padding-left: 5px;
+  color: #2e6ddf
+}
+#requireid {
+  color:#2e6ddf;
+  cursor: pointer;
+}
+.modal.show .modal-dialog {
+  background-color: white;
+}
+.panel-primary {
+  padding: 0px;
+}
+#help form {
+  padding-bottom: 22px;
+}
+.panel-heading {
+  background: #539ede;
+}
+.panel-heading h4 {
+  color: white;
+  padding: 20px 22px
+}
+.panel-primary form {
+  padding: 20px 22px
+}
+.panel-primary .panel-footer {
+  padding: 20px 0
+}
 
 .none {
     display: none;
@@ -996,6 +1094,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-course-categories,
   #fh5co-counter,
@@ -2222,6 +2321,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .js .animate-box {
   opacity: 0;
+}
+
+
+@media (min-width:440px) and (max-width:1090px) {
+  #media {
+    display: none;
+  }
+  .fh5co-nav #fh5co-logo {
+    font-size: 1.4em
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+#fh5co-hero .flexslider .slides li.subtop {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-height:330px;
+    height: 330px;
+    position: relative;
+}
+#fh5co-hero .flexslider .slides li.subtop .slider-text-inner {
+	min-height: 330px;
+	padding-top: 120px;
+}
+#fh5co-hero .flexslider .slides li.subtop .slider-text-inner h1 {
+	color: black
+}
+
+.fh5co-contact-info {
+  padding-left: 10vw
+}
+
+#fh5co-contact {
+  padding-top: 8em;
+  background-image: linear-gradient(to bottom, rgba(233,233,233, 0.95), rgba(233,233,233, 0.95)), url("../images/misc/ct_s.jpg");
+    background-image: -moz-linear-gradient(top, rgba(233,233,233, 0.95), rgba(233,233,233, 0.95)), url("../images/misc/ct_s.jpg");
+    background-image: -o-linear-gradient(top, rgba(233,233,233, 0.95), rgba(233,233,233, 0.95)), url("../images/misc/ct_s.jpg");
+    background-image: -ms-linear-gradient(top, rgba(233,233,233, 0.95), rgba(233,233,233, 0.95)), url("../images/misc/ct_s.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(233,233,233, 0.95)), to(rgba(233,233,233, 0.95))), url("../images/misc/ct_s.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(233,233,233, 0.95), rgba(233,233,233, 0.95)), url("../images/misc/ct_s.jpg");
+  background-attachment:fixed;
+  height: 100vh
+}
+div#headquater {
+	background-color: rgba(238,2380, 238, 0.93);
+}

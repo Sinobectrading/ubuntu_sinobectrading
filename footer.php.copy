@@ -1,4 +1,4 @@
-<footer id="fh5co-footer" role="contentinfo" style="background-image: url(/sinobectrading/images/img_bg_4.jpg);">
+<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
@@ -60,61 +60,63 @@
 			</div>
 
 		</div>
-</footer>
-</div>
+	</footer>
+	</div>
 
-<div class="gototop js-top">
-	<a href="#" class="/sinobectrading/js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 	
 <!-- jQuery -->
-<script src="/sinobectrading/js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="/sinobectrading/js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="/sinobectrading/js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="/sinobectrading/js/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="/sinobectrading/js/jquery.stellar.min.js"></script>
-<!-- Carousel -->
-<script src="/sinobectrading/js/owl.carousel.min.js"></script>
-<!-- Flexslider -->
-<script src="/sinobectrading/js/jquery.flexslider-min.js"></script>
-<!-- countTo -->
-<script src="/sinobectrading/js/jquery.countTo.js"></script>
-<!-- Magnific Popup -->
-<script src="/sinobectrading/js/jquery.magnific-popup.min.js"></script>
-<script src="/sinobectrading/js/magnific-popup-options.js"></script>
-<!-- Count Down -->
-<script src="/sinobectrading/js/simplyCountdown.js"></script>
-<!-- Main -->
-<script src="/sinobectrading/js/main.js"></script>
-<script src="/sinobectrading/js/classie.js"></script>
-<!-- <script src="/sinobectrading/js/jquery.form-validator.min.js"></script>
- -->
- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script src="js/jquery.min.js"></script>
+	<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
 
+<script src="https://use.fontawesome.com/51d3c24826.js"></script>
+
+<script src="js/flickity.pkgd.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="js/simplyCountdown.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+<script src="js/classie.js"></script>
 <script>
 var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
-
-// default example
-simplyCountdown('.simply-countdown-one', {
-    year: d.getFullYear(),
-    month: d.getMonth() + 1,
-    day: d.getDate()
-});
-
-//jQuery example
-$('#simply-countdown-losange').simplyCountdown({
-    year: d.getFullYear(),
-    month: d.getMonth() + 1,
-    day: d.getDate(),
-    enableUtc: false
-});
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
 </script>
-
- 
 <script>
 function init() {
     window.addEventListener('scroll', function(e){
@@ -123,17 +125,15 @@ function init() {
             header = document.querySelector("header");
         if (distanceY > shrinkOn) {
             classie.add(header,"smaller");
- 
-
         } else {
             if (classie.has(header,"smaller")) {
                 classie.remove(header,"smaller");
-           
             }
         }
     });
 }
 window.onload = init();
 </script>
-
+</body>
+</html>
 

@@ -8,7 +8,6 @@
 	<meta name="description" content="sinobectrading aluminum & steel provider" />
 	<meta name="keywords" content="sinobectrading, aluminum, steel" />
 	<meta name="author" content="Alex" />
-	
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -42,40 +41,39 @@
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:300,400,500,700"; rel="stylesheet">
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="/sinobectrading/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="/sinobectrading/css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/sinobectrading/css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="/sinobectrading/css/magnific-popup.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/sinobectrading/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/sinobectrading/css/owl.theme.default.min.css">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="/sinobectrading/css/flexslider.css">
 
 	<!-- Pricing -->
-	<!-- <link rel="stylesheet" href="css/pricing.css"> -->
+	<!-- <link rel="stylesheet" href="/sinobectrading/css/pricing.css"> -->
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="/sinobectrading/css/style.css">
+	<link rel="stylesheet" href="/sinobectrading/css/main.css">
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="/sinobectrading/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script src="/sinobectrading/js/respond.min.js"></script>
 	<![endif]-->
 
 	<script src="https://use.fontawesome.com/51d3c24826.js"></script>
 
-	<script src="js/flickity.pkgd.min.js"></script>
-	<link rel="stylesheet" href="css/flickity.css">
+	<script src="/sinobectrading/js/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="/sinobectrading/css/flickity.css">
 
 
 	
@@ -93,7 +91,8 @@
 		<div class="top">
 			<div class="container">
 				<div class="row">
- 						<div id="searchbox" class="col col-12  col-lg-6">
+					<div class="col-xs-12">
+						<div id="searchbox" class="col-md-6 clearfix">
 							<script>
 								(function() {
 								var cx = '005158123518513953887:apxmeeflxxc';
@@ -105,20 +104,11 @@
 								var s = document.getElementsByTagName('script')[0];
 								s.parentNode.insertBefore(gcse, s);
 								})();
-
-
-								$( window ).on( "load", function() {
-								$('#gsc-i-id1').removeAttr('placeholder');
-								$('#gsc-i-id1').css('background', 'none');
-								$("#gsc-i-id1").blur(function() {
-								$('#gsc-i-id1').css('background', 'none');
-								});
-								});
 								</script>
 								<gcse:search enableAutoComplete="true"></gcse:search>
 						</div>
 						<!--  -->
-						<div id="media" class="col col-12 col-lg-6">
+						<div id="media" class="col-md-6">
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -128,34 +118,35 @@
 							<p class="num">Call: +1 (514) 339 9333</p>
 							
 						</div>
- 				</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.php"><i class="icon-compass"></i>&nbsp;Sinobectrading<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="/sinobectrading/index.php"><i class="icon-compass"></i>&nbsp;Sinobectrading<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li 
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/index.php") {
 							echo 'class="active"';} ?> 
-							><a href="index.php">Home</a></li>
+							><a href="/sinobectrading/index.php">Home</a></li>
 							<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/about.php") {
 							echo 'class="active"';} ?> 
-							><a href="about.php">About</a></li>
+							><a href="/sinobectrading/about.php">About</a></li>
 							<!-- <li><a href="Product.php">Products</a></li> -->
 														<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/product.php") {
 							echo 'class="active"';} ?> 
-							><a href="product.php">Products</a></li>
+							><a href="/sinobectrading/product.php">Products</a></li>
 							<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/service.php") {
 							echo 'class="active"';} ?> 
-							><a href="service.php">Service</a></li>
+							><a href="/sinobectrading/service.php">Service</a></li>
 							<!-- <li class="has-dropdown">
 								<a href="#">Products&nbsp;<i class="icon-plus"></i></a>
 								<ul class="dropdown">
@@ -170,12 +161,12 @@
 							<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/news.php") {
 							echo 'class="active"';} ?> 
-							><a href="news.php">News</a></li>
+							><a href="/sinobectrading/news.php">News</a></li>
 							<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/contact.php") {
 							echo 'class="active"';} ?> 
-							><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="tracking.php"><span>Tracking</span></a></li>
+							><a href="/sinobectrading/contact.php">Contact</a></li>
+							<!-- <li class="btn-cta"><a href="#"><span>Tracking</span></a></li> -->
 							<!-- <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->
 						</ul>
 					</div>
