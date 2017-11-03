@@ -10,10 +10,9 @@
 					<h3>Useful Link</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="#">Sinobecgroup</a></li>
-						<li><a href="#">Sinometal</a></li>
+						<li><a href="#">Sinometalresources Inc.</a></li>
 						<li><a href="#">Sinobecresurces</a></li>
 						<li><a href="#">Iconbest</a></li>
-						<li><a href="#">Marquis Metal</a></li>
  					</ul>
 				</div>
 

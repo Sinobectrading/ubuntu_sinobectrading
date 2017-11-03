@@ -8,10 +8,10 @@
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://freehtml5.co">freeHTML5.co</a></li>
+							<li class="address">4455 Rue Cousens, <br> Saint-Laurent, QC, Canada H4S 1X5</li>
+							<li class="phone"><a href="tel://1234567920">+ 1 (514) 339 9333</a></li>
+							<li class="email"><a href="mailto:info@yoursite.com">info@sinobectrading.com</a></li>
+							<li class="url"><a href="http://www.sinobectrading.com">Sinobectrading.com</a></li>
 						</ul>
 					</div>
 
@@ -26,18 +26,24 @@
 						<div class="row form-group">
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname" data-validation="alphanumeric required">
+								<input type="text" id="fname" class="form-control" placeholder="Your Name" data-validation="alphanumeric required"
+								data-validation-error-msg="You did not enter a valid e-mail" 
+		 						data-validation-error-msg-container="#fname">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname" data-validation="alphanumeric required">
+								<input type="text" id="lname" class="form-control" placeholder="Organization Name" data-validation="alphanumeric required"
+								data-validation-error-msg="You did not enter a valid e-mail" 
+		 						data-validation-error-msg-container="#lname">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="email">Email</label> -->
-								<input type="text" id="email" class="form-control" placeholder="Your email address" data-validation="email required">
+								<input type="text" id="email" class="form-control" placeholder="Your email address" data-validation="email required" 
+								data-validation-error-msg="You did not enter a valid e-mail" 
+		 						data-validation-error-msg-container="#email">
 							</div>
 						</div>
 
@@ -51,7 +57,9 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" data-validation="alphanumeric required"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" data-validation="alphanumeric required" 
+								data-validation-error-msg="You did not enter a valid e-mail" 
+		 						data-validation-error-msg-container="message""></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -72,7 +80,17 @@
 $.validate({
 	form : '#contactform',
   	modules : 'toggleDisabled',
-  	disabledFormFilter : 'form.toggle-disabled'
+  	disabledFormFilter : 'form.toggle-disabled',
+  	inlineErrorMessageCallback: function($input, errorMessage, config) {
+     // Return an element that should contain the error message.
+     // This callback will called when validateOnBlur is set to true (default) and/or errorMessagePosition is set to 'inline'
+      if (errorMessage) {
+      	$($input).focus();
+      }
+      else {
+      	$('#submit').attr("disabled",false);
+      }
+  },
 });
 </script>
 </body></html>
