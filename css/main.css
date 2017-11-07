@@ -1,3 +1,42 @@
+body {
+ font-family: 'Varela Round', sans-serif;
+ font-size: 17px;
+ color: #261e1e
+}
+.ui-accordion .ui-accordion-header {
+  padding-top: 1.6em;
+  padding-bottom: 1.6em
+}
+#detailed #fh5co-staff {
+  padding-top: 2em
+}
+.staff {
+    width: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  display: table;
+}
+#detailed {
+  padding-top: 20vh
+}
+#cg a span {
+  font-size: 24px;
+  color: white;
+  line-height: 22;
+padding-left: 12vw
+}
+.producthr {
+  border-top: 2px solid #fda78a;
+  padding-top: 10px
+}
+.sec {
+  padding-left: 15px;
+}
 #fh5co-hero .flexslider .slides li.subtop {
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,3 +71,8 @@
 div#headquater {
 	background-color: rgba(238,2380, 238, 0.93);
 }
+.timeline .timeline-heading h4 {
+  color: #261e1e;
+  font-size: 1.8em
+}
+ 

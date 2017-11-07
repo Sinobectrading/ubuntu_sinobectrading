@@ -60,6 +60,7 @@ h1.center {
 }
 
 
+ 
 /*======products page*/
 div#page div.product {
   padding-top: 10em;
@@ -90,7 +91,7 @@ padding-top: 5px ! important;
 }
 .gsc-search-button
 {
-    background-color: #ccc;
+    background-color: #4b81e2;
     border-radius: 1px;
 }
  input.gsc-search-button-v2 {
@@ -108,12 +109,12 @@ input.gsc-input,
     line-height: normal;
 }
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #ccc !important;
+    background-color: #4b81e2 !important;
     background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 14px !important;
-    border-color: #ccc !important;
+    border-color: #4b81e2 !important;
     filter: none;
 }
 .gsc-adBlock{ 
@@ -730,7 +731,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Varela Round', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -1078,7 +1079,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #e8e8e8;
 }
 #fh5co-pricing {
- background: #fff;
+ background: #e8e8e8;
 }
 #fh5co-course-categories,
 #fh5co-counter,
@@ -1188,7 +1189,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 44px;
   display: block;
   color: white;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Varela Round', sans-serif;
   width: 100%;
   font-weight: 400;
   margin-bottom: .1em;
@@ -1198,7 +1199,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 16px;
   margin-bottom: 2em;
   display: block;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Varela Round', sans-serif;
 }
 .fh5co-counters .icon i {
   font-size: 45px;

@@ -33,13 +33,23 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
+			<!-- jQuery -->
+	<script src="/sinobectrading/js/jquery.min.js"></script>
+	<script>	
+	$( window ).on( "load", function() {
+	$('#gsc-i-id1').removeAttr('placeholder');
+	$('#gsc-i-id1').css('background', 'none');
+	$("#gsc-i-id1").blur(function() {
+	$('#gsc-i-id1').css('background', 'none');
+	});
+    });	
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:300,400,500,700"; rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="/sinobectrading/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -62,20 +72,25 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="/sinobectrading/css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="/sinobectrading/css/main.css">
 	<!-- Modernizr JS -->
 	<script src="/sinobectrading/js/modernizr-2.6.2.min.js"></script>
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="/sinobectrading/js/respond.min.js"></script>
 	<![endif]-->
 
 	<script src="https://use.fontawesome.com/51d3c24826.js"></script>
-
+	
 	<script src="/sinobectrading/js/flickity.pkgd.min.js"></script>
+
 	<link rel="stylesheet" href="/sinobectrading/css/flickity.css">
 
-
+	<link href="/sinobectrading/css/bootstrap3-editable.css"/>
+	<link href="/sinobectrading/css/bootstrap3-wysihtml5.css"></link>
+	
 	
 	</head>
 	<body>
@@ -95,16 +110,17 @@
 						<div id="searchbox" class="col-md-6 clearfix">
 							<script>
 								(function() {
-								var cx = '005158123518513953887:apxmeeflxxc';
-								var gcse = document.createElement('script');
-								gcse.type = 'text/javascript';
-								gcse.async = true;
-								gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+										var cx = '005158123518513953887:apxmeeflxxc';
+										var gcse = document.createElement('script');
+										gcse.type = 'text/javascript';
+										gcse.async = true;
+										gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
 								    '//www.google.com/cse/cse.js?cx=' + cx;
-								var s = document.getElementsByTagName('script')[0];
-								s.parentNode.insertBefore(gcse, s);
+										var s = document.getElementsByTagName('script')[0];
+										s.parentNode.insertBefore(gcse, s);
 								})();
 								</script>
+
 								<gcse:search enableAutoComplete="true"></gcse:search>
 						</div>
 						<!--  -->
@@ -142,11 +158,11 @@
 														<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/product.php") {
 							echo 'class="active"';} ?> 
-							><a href="/sinobectrading/product.php">Products</a></li>
-							<li
+							><a href="/sinobectrading/product.php">Products & Service</a></li>
+							<!-- <li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/service.php") {
 							echo 'class="active"';} ?> 
-							><a href="/sinobectrading/service.php">Service</a></li>
+							><a href="/sinobectrading/service.php">Service</a></li> -->
 							<!-- <li class="has-dropdown">
 								<a href="#">Products&nbsp;<i class="icon-plus"></i></a>
 								<ul class="dropdown">
@@ -158,10 +174,10 @@
 									<li><a href="surface.php">Surface finish</a></li>
 								</ul>
 							</li> -->
-							<li
+							<!-- <li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/news.php") {
 							echo 'class="active"';} ?> 
-							><a href="/sinobectrading/news.php">News</a></li>
+							><a href="/sinobectrading/news.php">News</a></li> -->
 							<li
 							<?php if (trim($_SERVER['PHP_SELF']) == "/sinobectrading/contact.php") {
 							echo 'class="active"';} ?> 

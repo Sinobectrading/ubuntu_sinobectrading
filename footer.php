@@ -1,4 +1,4 @@
-<footer id="fh5co-footer" role="contentinfo" style="background-image: url(/sinobectrading/images/img_bg_4.jpg);">
+<footer id="fh5co-footer" role="contentinfo" style="background-image: url(/sinobectrading/images/AdobeStock_82977456.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
@@ -19,11 +19,11 @@
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Career</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Sales</a></li>
-						<li><a href="#">Logistic</a></li>
-						<li><a href="#">Administration</a></li>
-						<li><a href="#">Finance</a></li>
-						<li><a href="#">Warehouse</a></li>
+						<li><a href="career.php">Sales</a></li>
+						<li><a href="career.php">Logistic</a></li>
+						<li><a href="career.php">Administration</a></li>
+						<li><a href="career.php">Finance</a></li>
+						<li><a href="career.php">Warehouse</a></li>
 					</ul>
 				</div>
 
@@ -66,8 +66,7 @@
 	<a href="#" class="/sinobectrading/js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
 	
-<!-- jQuery -->
-<script src="/sinobectrading/js/jquery.min.js"></script>
+
 <!-- jQuery Easing -->
 <script src="/sinobectrading/js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
@@ -90,9 +89,16 @@
 <!-- Main -->
 <script src="/sinobectrading/js/main.js"></script>
 <script src="/sinobectrading/js/classie.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <!-- <script src="/sinobectrading/js/jquery.form-validator.min.js"></script>
  -->
  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<!-- editable - -->
+<script src="/sinobectrading/js/bootstrap-editable.min.js"></script>	  
+<script src="/sinobectrading/js/wysihtml5-0.3.0.min.js"></script>  
+<script src="/sinobectrading/js/bootstrap3-wysihtml5.js"></script>
 
 <script>
 var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
@@ -133,6 +139,7 @@ function init() {
     });
 }
 window.onload = init();
+
 </script>
 
 

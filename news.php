@@ -4,14 +4,14 @@
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_4.jpg);">
+		   	<li style="background-image: url(images/AdobeStock_89451519_3.jpg);" class="fixed">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1 class="heading-section">Blog &amp; Events</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
+			   					<h1 class="heading-section">News</h1>
+									<h2>Our little step is a huge step of the world <a href="http://#/" target="_blank">#</a></h2>
 			   				</div>
 			   			</div>
 			   		</div>
