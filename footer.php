@@ -6,7 +6,7 @@
 					<h3>About Sinobectrading</h3>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+				<div class="col-md-2 col-sm-4 col-xs-12 col-md-push-1 fh5co-widget">
 					<h3>Useful Link</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="#">Sinobecgroup</a></li>
@@ -16,7 +16,7 @@
  					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+				<div class="col-md-2 col-sm-4 col-xs-12 col-md-push-1 fh5co-widget">
 					<h3>Career</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="career.php">Sales</a></li>
@@ -27,7 +27,7 @@
 					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+				<div class="col-md-2 col-sm-4 col-xs-12 col-md-push-1 fh5co-widget">
 					<h3>Engage us</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="#">Marketing</a></li>
@@ -37,7 +37,7 @@
 					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+				<div class="col-md-2 col-sm-4 col-xs-12 col-md-push-1 fh5co-widget">
 					<h3>Legal</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="#">Find Designers</a></li>
@@ -77,8 +77,12 @@
 <script src="/sinobectrading/js/jquery.stellar.min.js"></script>
 <!-- Carousel -->
 <script src="/sinobectrading/js/owl.carousel.min.js"></script>
+
+
+<!-- <script src="/sinobectrading/js/jquery.slicebox.js"></script> -->
+
 <!-- Flexslider -->
-<script src="/sinobectrading/js/jquery.flexslider-min.js"></script>
+<!-- <script src="/sinobectrading/js/jquery.flexslider-min.js"></script> -->
 <!-- countTo -->
 <script src="/sinobectrading/js/jquery.countTo.js"></script>
 <!-- Magnific Popup -->
@@ -89,17 +93,54 @@
 <!-- Main -->
 <script src="/sinobectrading/js/main.js"></script>
 <script src="/sinobectrading/js/classie.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/sinobectrading/js/jquery-ui.js"></script>
 
 <!-- <script src="/sinobectrading/js/jquery.form-validator.min.js"></script>
  -->
- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+ <script src="/sinobectrading/js/jquery.form-validator.min.js"></script>
 
 <!-- editable - -->
-<script src="/sinobectrading/js/bootstrap-editable.min.js"></script>	  
+<!-- <script src="/sinobectrading/js/bootstrap-editable.min.js"></script>	  
 <script src="/sinobectrading/js/wysihtml5-0.3.0.min.js"></script>  
-<script src="/sinobectrading/js/bootstrap3-wysihtml5.js"></script>
+<script src="/sinobectrading/js/bootstrap3-wysihtml5.js"></script> -->
+<script>
+(function( $ ) {
 
+    //Function to animate slider captions 
+	function doAnimations( elems ) {
+		//Cache the animationend event in a variable
+		var animEndEv = 'webkitAnimationEnd animationend';
+		
+		elems.each(function () {
+			var $this = $(this),
+				$animationType = $this.data('animation');
+			$this.addClass($animationType).one(animEndEv, function () {
+				$this.removeClass($animationType);
+			});
+		});
+	}
+	
+	//Variables on page load 
+	var $myCarousel = $('#sg-carousel'),
+		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+		
+	//Initialize carousel 
+	$myCarousel.carousel();
+	
+	//Animate captions in first slide on page load 
+	doAnimations($firstAnimatingElems);
+	
+	//Pause carousel  
+	$myCarousel.carousel('pause');
+	
+	
+	//Other slides to be animated on carousel slide event 
+	$myCarousel.on('slide.bs.carousel', function (e) {
+		var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+		doAnimations($animatingElems);
+	});  
+});  
+</script>
 <script>
 var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 

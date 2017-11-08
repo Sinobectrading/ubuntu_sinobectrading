@@ -65,14 +65,14 @@
 	<link rel="stylesheet" href="/sinobectrading/css/owl.theme.default.min.css">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="/sinobectrading/css/flexslider.css">
-
+<!-- 	<link rel="stylesheet" href="/sinobectrading/css/flexslider.css">
+ -->
 	<!-- Pricing -->
-	<!-- <link rel="stylesheet" href="/sinobectrading/css/pricing.css"> -->
+<!-- 	<link rel="stylesheet" href="/sinobectrading/css/pricing.css"> -->
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="/sinobectrading/css/style.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/sinobectrading/css/jquery-ui.css">
 	<link rel="stylesheet" href="/sinobectrading/css/main.css">
 	<!-- Modernizr JS -->
 	<script src="/sinobectrading/js/modernizr-2.6.2.min.js"></script>
@@ -82,16 +82,23 @@
 	<script src="/sinobectrading/js/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="https://use.fontawesome.com/51d3c24826.js"></script>
+	<script src="/sinobectrading/js/fontawesome.min.js"></script>
 	
 	<script src="/sinobectrading/js/flickity.pkgd.min.js"></script>
 
-	<link rel="stylesheet" href="/sinobectrading/css/flickity.css">
+	<link href="/sinobectrading/css/flickity.css">
+<!-- 	<link href="/sinobectrading/css/slicebox.css"> -->
 
-	<link href="/sinobectrading/css/bootstrap3-editable.css"/>
-	<link href="/sinobectrading/css/bootstrap3-wysihtml5.css"></link>
+	<!-- <link href="/sinobectrading/css/bootstrap3-editable.css"/>
+	<link href="/sinobectrading/css/bootstrap3-wysihtml5.css"></link> -->
 	
-	
+
+<!-- --slider-- -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+<style>
+
+
+</style>
 	</head>
 	<body>
 		

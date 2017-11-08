@@ -91,7 +91,7 @@ padding-top: 5px ! important;
 }
 .gsc-search-button
 {
-    background-color: #4b81e2;
+    background-color: #017fff;
     border-radius: 1px;
 }
  input.gsc-search-button-v2 {
@@ -109,12 +109,12 @@ input.gsc-input,
     line-height: normal;
 }
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #4b81e2 !important;
+    background-color: #017fff !important;
     background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 14px !important;
-    border-color: #4b81e2 !important;
+    border-color: #017fff !important;
     filter: none;
 }
 .gsc-adBlock{ 
@@ -255,6 +255,8 @@ padding: 10px 15px;
 }
 header.smaller .fh5co-nav .top-menu {
     padding: 15px 0;
+    background-color: rgba(255,255,255,.3);
+    opacity: 0.8
 }
 header.smaller .fh5co-nav ul {
     padding: 0;
@@ -424,221 +426,7 @@ div.menu-1 ul li a:hover:before {
 
 
 /*================== timeline start =================================*/
-.timeline {
-    position: relative;
-    padding:4px 0 0 0;
-    margin-top:22px;
-    list-style: none;
-}
-
-.timeline>li:nth-child(even) {
-    position: relative;
-    margin-bottom: 50px;
-    height: 180px;
-    right:-100px;
-}
-
-.timeline>li:nth-child(odd) {
-    position: relative;
-    margin-bottom: 50px;
-    height: 180px;
-    left:-100px;
-}
-
-.timeline>li:before,
-.timeline>li:after {
-    content: " ";
-    display: table;
-}
-
-.timeline>li:after {
-    clear: both;
-    min-height: 170px;
-}
-
-.timeline > li .timeline-panel {
-  position: relative;
-  float: left;
-  width: 41%;
-  padding: 0 20px 20px 30px;
-  text-align: right;
-}
-
-.timeline>li .timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
-}
-
-.timeline>li .timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
-}
-
-.timeline>li .timeline-image {
-    z-index: 100;
-    position: absolute;
-    left: 50%;
-    border: 7px solid #a4bfc8;
-    border-radius: 100%;
-    background-color: #a4bfc8;
-    box-shadow: 0 0 5px #4582ec;
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-}
-
-.timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
-    line-height: 14px;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
-}
-
-.timeline>li.timeline-inverted>.timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
-}
-
-.timeline>li:last-child {
-    margin-bottom: 0;
-}
-
-.timeline .timeline-heading h4 {
-  margin-top:22px;
-    margin-bottom: 4px;
-    padding:0;
-    color: #b3b3b3;
-}
-
-.timeline .timeline-heading h4.subheading {
-  margin:0;
-  padding:0;
-    text-transform: none;
-    font-size:18px;
-    color:#333333;
-}
-
-.timeline .timeline-body>p,
-.timeline .timeline-body>ul {
-    margin-bottom: 0;
-    color:#808080;
-}
-/*Style for even div.line*/
-.timeline>li:nth-child(odd) .line:before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 690px;
-    width: 4px;
-    height:340px;
-    background-color: #a4bfc8;
-    -ms-transform: rotate(-44deg); /* IE 9 */
-    -webkit-transform: rotate(-44deg); /* Safari */
-    transform: rotate(-44deg);
-    box-shadow: 0 0 5px #4582ec;
-}
-/*Style for odd div.line*/
-.timeline>li:nth-child(even) .line:before  {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 450px;
-    width: 4px;
-    height:340px;
-    background-color: #a4bfc8;
-    -ms-transform: rotate(44deg); /* IE 9 */
-    -webkit-transform: rotate(44deg); /* Safari */
-    transform: rotate(44deg);
-    box-shadow: 0 0 5px #4582ec;
-}
-/* Medium Devices, .visible-md-* */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .timeline > li:nth-child(even) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    right: 0px;
-  }
-  .timeline > li:nth-child(odd) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    left: 0px;
-  }
-  .timeline>li:nth-child(even) .timeline-image {
-    left: 0;
-    margin-left: 0px;
-  }
-  .timeline>li:nth-child(odd) .timeline-image {
-    left: 690px;
-    margin-left: 0px;
-  }
-  .timeline > li:nth-child(even) .timeline-panel {
-    width: 76%;
-    padding: 0 0 20px 0px;
-    text-align: left;
-  }
-  .timeline > li:nth-child(odd) .timeline-panel {
-    width: 70%;
-    padding: 0 0 20px 0px;
-    text-align: right;
-  }
-  .timeline > li .line {
-    display: none;
-  }
-}
-/* Small Devices, Tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .timeline > li:nth-child(even) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    right: 0px;
-  }
-  .timeline > li:nth-child(odd) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    left: 0px;
-  }
-  .timeline>li:nth-child(even) .timeline-image {
-    left: 0;
-    margin-left: 0px;
-  }
-  .timeline>li:nth-child(odd) .timeline-image {
-    left: 520px;
-    margin-left: 0px;
-  }
-  .timeline > li:nth-child(even) .timeline-panel {
-    width: 70%;
-    padding: 0 0 20px 0px;
-    text-align: left;
-  }
-  .timeline > li:nth-child(odd) .timeline-panel {
-    width: 70%;
-    padding: 0 0 20px 0px;
-    text-align: right;
-  }
-  .timeline > li .line {
-    display: none;
-  }
-}
+ 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
   #fh5co-tracking {
@@ -847,12 +635,15 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 300;
 }
 .fh5co-nav ul li a {
-  font-size: 14px;
+  font-size: 16px;
   padding: 30px 15px;
   color: rgba(0, 0, 0, 0.9);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+.smaller .fh5co-nav ul li a {
+  font-size: 14px;
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
   color: black;
@@ -1095,6 +886,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
 
 @media screen and (max-width: 768px) {
   #fh5co-course-categories,
