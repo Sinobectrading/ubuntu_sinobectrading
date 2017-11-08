@@ -1,25 +1,19 @@
 <?php include_once 'header.php'; ?>
 	
-<aside id="fh5co-hero">
-	<div class="flexslider">
-		<ul class="slides">
-	   	<li style="background-image: url(images/AdobeStock_20062484.jpg);">
-	   		<div class="overlay-gradient"></div>
-	   		<div class="container">
-	   			<div class="row">
-		   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
-		   				<div class="slider-text-inner">
-		   					<h1 class="heading-section">About Us</h1>
-								<h2>Metal is our business <a href="http://#/" target="_blank">Sinobectrading</a></h2>
-		   				</div>
-		   			</div>
-		   		</div>
-	   		</div>
-	   	</li>
-	  	</ul>
-  	</div>
-</aside>
-
+ 
+<div class="inside">
+  	<div class="insidepic" id="aboutbck">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+				<div class="slider-text-inner">
+					<h1 class="heading-section">About Us</h1>
+					<h2>Metal is our business  </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
 <div id="fh5co-about">
 	<div class="container">
 		<div class="col-md-6 animate-box" id="aboutus">
@@ -87,12 +81,11 @@
           </div>
         </li>
         <li>
-         <div class="timeline-badge danger"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+         <div class="timeline-badge danger">2006</div>
           	<div class="timeline-panel">
              	<div class="flex">
 	            	<div class="timeline-heading">
-	              		<h4 class="timeline-title">2006</h4>
-	              		<h4>进入风能领域</h4>
+	              		<h4 class="timeline-title">进入风能领域</h4>
 	              		<p><small class="text-muted">实现销售额99999999万元</small></p>
 	            	</div>
 		            <div>
@@ -104,13 +97,12 @@
 
         	<li class="timeline-inverted">
 	        	<div class="timeline-badge warning">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2007
 	        	</div>
 	          <div class="timeline-panel">
 	             <div class="flex">
 		            	<div class="timeline-heading">
-		              		<h4 class="timeline-title">2007</h4>
-		              		<h4>建立中国分公司</h4>
+		              		<h4 class="timeline-title">建立中国分公司</h4>
 		              		<p><small class="text-muted">实现销售额99999999万元</small></p>
 		            	</div>
 			            <div>
@@ -122,14 +114,13 @@
         
         	<li>
 	        	<div class="timeline-badge info">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2008
 	        	</div>
 	        	<div class="timeline-panel">
 	        		<div class="flex">
 	        			<div class="timeline-heading">
-	        				<h4 class="timeline-title">2008</h4>
-	        				<h4>进入太阳能发电领域</h4>
-	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        				<h4 class="timeline-title">进入太阳能发电领域</h4>
+ 	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
 	        			</div>
 	        			<div>
 	        				<img src="images/time.jpg" alt="">
@@ -140,14 +131,13 @@
 
         	<li class="timeline-inverted">
 	        	<div class="timeline-badge success">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2012
 	        	</div>
 	        	<div class="timeline-panel">
 	        		<div class="flex">
 	        			<div class="timeline-heading">
-	        				<h4 class="timeline-title">2012</h4>
-	        				<h4>进入航空航天领域</h4>
-	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        				<h4 class="timeline-title">进入航空航天领域</h4>
+ 	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
 	        			</div>
 	        			<div>
 	        				<img src="images/time.jpg" alt="">
@@ -159,14 +149,13 @@
 
         	<li>
 	        	<div class="timeline-badge success">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2014
 	        	</div>
 	        	<div class="timeline-panel">
 	        		<div class="flex">
 	        			<div class="timeline-heading">
-	        				<h4 class="timeline-title">2014</h4>
-	        				<h4>进入运输领域</h4>
-	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        				<h4 class="timeline-title">进入运输领域</h4>
+ 	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
 	        			</div>
 	        			<div>
 	        				<img src="images/time.jpg" alt="">
@@ -177,14 +166,13 @@
 
         	<li class="timeline-inverted">
 	        	<div class="timeline-badge success">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2017
 	        	</div>
 	        	<div class="timeline-panel">
 	        		<div class="flex">
 	        			<div class="timeline-heading">
-	        				<h4 class="timeline-title">2016</h4>
-	        				<h4>进入电子设备领域</h4>
-	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        				<h4 class="timeline-title">进入电子制造领域</h4>
+ 	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
 	        			</div>
 	        			<div>
 	        				<img src="images/time.jpg" alt="">
@@ -195,14 +183,30 @@
 
         	<li>
 	        	<div class="timeline-badge success">
-	        		<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+	        		2017
 	        	</div>
 	        	<div class="timeline-panel">
 	        		<div class="flex">
 	        			<div class="timeline-heading">
-	        				<h4 class="timeline-title">2017</h4>
-	        				<h4>进入化工领域</h4>
-	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        				<h4 class="timeline-title">进入化工领域</h4>
+ 	        				<p><small class="text-muted">实现销售额99999999万元</small></p>
+	        			</div>
+	        			<div>
+	        				<img src="images/time.jpg" alt="">
+	        			</div>
+	        		</div>
+	        	</div>
+        	</li>
+        	<li class="timeline-inverted">
+	        	<div class="timeline-badge success">
+	        		...
+	        	</div>
+	        	<div class="timeline-panel">
+	        		<div class="flex">
+	        			<div class="timeline-heading">
+	        				<h4 class="timeline-title">Bright Future
+	        				</h4>
+ 	        				<p><small class="text-muted">实现销售额9999999999万元</small></p>
 	        			</div>
 	        			<div>
 	        				<img src="images/time.jpg" alt="">
@@ -216,7 +220,7 @@
 
  
 
-<div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
+<!-- <div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
 	<div class="overlay"></div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 animate-box">
@@ -227,12 +231,15 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <div id="fh5co-gallery" class="fh5co-bg-section">
-	<div class="row text-center">
-		<h1 class="text-center" style="font-weight:900">Our Organization</h1>
+	<div class="container">
+		<div class="row">
+		<h1>Our Organization</h1>
 	</div>
+	</div>
+	
 	<div class="row" id="cg">
 		<div class="col-md-3 col-padded">
 			<a class="gallery" style="background-image: url(images/kimball_hq-leed.jpg);"><span>Chicago Branch</span></a>

@@ -3,6 +3,13 @@ body {
  font-size: 17px;
  color: #261e1e
 }
+
+
+/*slider*/
+#fh5co-course-categories {
+     padding-top: 2em
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -16,7 +23,16 @@ body {
 #fh5co-pricing .item .col-md-2 {
   text-align: center;
 } 
-
+#fh5co-pricing .carousel-control {
+     font-size: 4em;
+     opacity: 0.8;
+     color: #333;
+     line-height: 1
+}
+#fh5co-pricing .carousel-control.left,
+#fh5co-pricing .carousel-control.right{
+     background-image: none;
+}
 
 /*timeline*/
 .timeline {
@@ -172,7 +188,7 @@ body {
 
 @media (max-width: 767px) {
     .flex {
-      margin-top: 15vh
+      margin-top: 20vh
     }
     ul.timeline:before {
         left: 40px;
@@ -199,11 +215,11 @@ body {
             
 
             position: absolute;
-            top: 26px;
+            top: 38px;
             left: 0px;
             display: inline-block;
-            border-top: 15px solid transparent;
-            border-left: 15px solid #ccc;
+            border-top: 16px solid transparent;
+            border-left: 16px solid #ccc;
             border-right: 0 solid #ccc;
             border-bottom: 15px solid transparent;
             content: " ";
@@ -211,7 +227,7 @@ body {
 
        #fh5co-course-categories ul.timeline > li > .timeline-panel:after {
                position: absolute;
-              top: 27px;
+              top: 40px;
               left: 0px;
               display: inline-block;
               border-top: 14px solid transparent;
@@ -290,9 +306,11 @@ body {
 #sg-carousel .carousel-control.right {
     background-image: none;
     background-repeat: no-repeat;
-    opacity: 0;
+    font-size: 60px;
+    opacity: 0.2;
     text-shadow: none;
     transition: all 0.8s ease 0s;
+    top: 40%
 }
 .carousel-control {
     bottom: 0;
@@ -537,8 +555,66 @@ padding-left: 12vw
 div#headquater {
 	background-color: rgba(238,2380, 238, 0.93);
 }
+
+
+/*inside pages header*/
+.inside {
+     padding-top: 15vh;
+     width: 100%;
+
+}
+.insidepic {
+     height: 280px;
+     color: #fff;
+}
+#aboutbck {
+     background:   
+           linear-gradient(
+                rgba(0, 0, 0, 0.4), 
+                rgba(05, 0, 0, 0.4)
+              ),
+     url(../images/AdobeStock_20062484.jpg);
+}
+#productbck {
+     background:   
+           linear-gradient(
+                rgba(0, 0, 0, 0.4), 
+                rgba(05, 0, 0, 0.4)
+              ),
+     url(../images/AdobeStock_116889541.jpg);
+}
+.inside h1 {
+     padding-top: 120px;
+}
+.inside h1,.inside h2 {
+     color: white;
+     text-align: left;
+     padding-left: 0vw
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h1, 
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
+  margin: 0;
+  padding: 0;
+  color: white; z-index: 100000;
+}
  
-@media screen and (max-width: 325px) {
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.insidepic h1,.insidepic h2 {
+     padding-left: 15px
+}
+
 
 .carousel-inner {
     box-shadow: 0px 0px 0px;
@@ -581,10 +657,10 @@ div#headquater {
     margin-top: 0px
   }
  .fh5co-nav-toggle {
-  top: 21.3vh
+  top: 15in.3vh
  }
  .fh5co-nav #fh5co-logo {
-  margin-top: 10vh
+  margin-top: 4vh
  }
  #fh5co-course-categories {
   padding-top: 5em
@@ -595,33 +671,42 @@ div#headquater {
   #fh5co-pricing .item {
     padding-top: 0vh
   }
-  .headquater {
+/*  .headquater {
     margin-top: 16vh
-  }
+  }*/
 
 
 
-
+/*contact us*/
 #fh5co-contact {
-  padding-top : 25vh;
+  padding-top : 12vh;
   background-color:white;
   background-image: none;
-  height: 100vh;
-  min-height: 100vh
+  clear: both
+}
+#fh5co-contact h1 {
+     margin-bottom: 0px
+}
+#cntform {
+     margin-top: 5vh;
+     width: 90%;
+     padding-left: 12vw;
+     float: left;
+     clear: both;
 }
 .js .animate-box{
   opacity: 1;
   display: block;
   clear: both;
-  height: 67vh;
-  min-height: 67vh;
+ height: auto
 
 }
 #fname {
   margin-bottom: 15px
 }
 #map {
- margin-top: 143vh;
+ margin-top: 5vh;
+ height: 400px;
  clear: both
 } 
 #contactform {
@@ -646,6 +731,35 @@ ul.slides {
   display: block;
   height: 100%
 }
+.fh5co-nav .top .fh5co-social {
+    border-left: 0px solid rgba(0, 0, 0, 0.08);
+    border-right: 0px solid rgba(0, 0, 0, 0.08);
+}
 
 
+/*social media*/
+#media {
+     margin-left: -15px;
+     padding-left: 0px;
+}
+#media ul {
+     float: left ! important;
+}
+.fh5co-nav .top .fh5co-social {
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.fh5co-nav .top .fh5co-social li {
+    font-size: 10px;
+    display: inline-block;
+}
+
+.fh5co-nav .top .num {
+    border-left: 0px solid rgba(0, 0, 0, 0.00);
+    color: black;
+    font-size: 13px;
+    float: right;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px
 }

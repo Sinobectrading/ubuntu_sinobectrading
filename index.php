@@ -15,7 +15,7 @@
 				</div>
 			   <div class="item"><img class="img-responsive" src="/sinobectrading/images/slider02.jpg" alt="">
 				  <div class="carousel-caption">
-					<h1 data-animation="animated zoomInLeft" class="cap-txt">We are smart developers</h1>
+					<h1 data-animation="animated zoomInLeft" class="cap-txt">We are ...</h1>
 					<p data-animation="animated bounceInDown">Get start your next awesome project</p>
 					<button data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send"><span>Send</span></button>
 				  </div>
